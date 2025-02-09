@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maaf Request 💖</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: linear-gradient(135deg, #ff758c, #ff7eb3, #fad0c4);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      line-height: 1.4;
+    }
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.2s, background-color 0.3s;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      width: 100%;
+      max-width: 300px;
+    }
+    .yes {
+      background-color: #ff5f6d;
+      font-size: 1.3rem;
+    }
+    .no {
+      background-color: #6c757d;
+      font-size: 1.3rem;
+    }
+    button:hover {
+      transform: scale(1.05);
+    }
+    .yes:hover {
+      background-color: #ff3d5a;
+    }
+    .no:hover {
+      background-color: #545b62;
+    }
+    .emoji {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      animation: bounce 1.5s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 3rem;
+      }
+      .buttons {
+        flex-direction: row;
+        gap: 30px;
+      }
+      button {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="emoji">🥹❤️</div>
+  <h1>Please Ujju Maaf Kardo Apne Smoll Gugu Ko 💕</h1>
+  <div class="buttons">
+    <button class="yes" onclick="happyPage()">Yes 🥰</button>
+    <button class="no" onclick="sadPage()">No 🥲</button>
+  </div>
+
+  <script>
+    function happyPage() {
+      document.body.innerHTML = `
+        <div style="text-align: center; padding: 20px;">
+          <div style="font-size: 4rem; margin-bottom: 20px;">💖🥳</div>
+          <h1 style="color: #fff;">I Love You So Much! 💕</h1>
+          <p style="color: #fff; font-size: 1.5rem;">You are my world! 🌹✨</p>
+        </div>`;
+      document.body.style.background = "linear-gradient(135deg, #ff758c, #ff7eb3)";
+    }
+
+    function sadPage() {
+      document.body.innerHTML = `
+        <div style="text-align: center; padding: 20px;">
+          <div style="font-size: 4rem; margin-bottom: 20px;">😔🥲</div>
+          <h1 style="color: #fff;">Please Maaf Kardo Na... 🙏</h1>
+          <p style="color: #fff; font-size: 1.5rem;">Your Smoll Gugu is Really Sorry 😭</p>
+        </div>`;
+      document.body.style.background = "linear-gradient(135deg, #6c757d, #adb5bd)";
+    }
+  </script>
+</body>
+</html>
